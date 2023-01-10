@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Coding for humans. Come say hi 🌳" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:site_name" content="KYS | Home" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="https://yaushing.github.io/yaushing" />
+        <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
+        <script>
+            ! function(A) {
+              "use strict";
+            
+              function e(A, e, n) {
+                const o = function(A) {
+                  return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+                }(A);
+                if (null === o) {
+                  const t = new Image;
+                  return t.onload = t.onerror = function() {
+                    n(A, 2 === t.height)
+                  }, void(t.src = e)
+                }
+                t(A, o)
+              }
+            
+              function t(e, t) {
+                t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+              }
+              e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+            }(document);
+        </script>
+        <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="icon" href="assets/images/favicon.png" />
+        <script async src="assets/main.js"></script>
+        <title>KYS | Home</title>
+    </head>
+    <body class="cursor-default">
+        <div class="space">
+            <div class="stars"></div>
+            <div class="spaceship">
+                <div class="tv js-tv">
+                    <div class="tv-screen js-screen">
+                        <div class="tv-effects">
+                            <div class="tv-effect --decontrast"></div>
+                            <div class="tv-effect --static"></div>
+                            <div class="tv-effect --artifacts"></div>
+                            <div class="tv-effect --vignette"></div>
+                            <div class="tv-effect --crt"></div>
+                        </div>
+                        <div class="tv-content js-content">
+                            <a class="skip-link" href="#content">Skip to content</a>
+                            <div class="page-container glitchy-text">
+                                <header class="header">
+                                    <div class="header__container">
+                                        <nav class="nav" js-slot="nav">
+                                            <ul class="nav__breadcrumb">
+                                                <li><a href="index.html">YSK</a></li>
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="Niche"> Niche </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="header__info">
+                                            <div class="js-header-date">NOV 14, 2022</div>
+                                            <div class="js-header-controls"></div>
+                                            <noscript>
+                                                <div role="button">CHANNEL 00</div>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="page-content" id="content" js-slot="content">
+                                    <article class="bio">
+                                        <p class="big-text" style="color:white"> 
+                                            "Music and rhythm find their way into the secret places of the soul"
+                                        </p>
+                                        <small>~Plato</small>
+                                    </article>
+                                <br><br>
+                                <div>
+                                    <div style="display:flex; justify-content:center;">
+                                        <p style="font-size:5vh">
+                                            I was intrigued by the sounds created by my older sister, who was learning the <a>violin</a> 
+                                            when I was only five. My parents acquiesced to my request for lessons to make just as <a>beautiful</a> 
+                                            and <a>melodious</a> music. I think Johann Sebastian Bach is the best composer ever living and crafted 
+                                            two of my favourite musical pieces: Sinfonia in D major BWV 789 and Prelude in C major BWV 846. 
+                                            In 2020, I started piano, beginning with the 
+                                            piano pieces Sonata in C by Mozart and Moonlight Sonata by Johann Sebastian Bach.
+                                        </p>
+                                    </div>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2022</p>
+                                    </div>
+                                    <p>
+                                        2022 was the worst year of my progress in music. With Teacher Teresa now 
+                                        married and with a baby, she had no choice but to stop our lessons. Without a 
+                                        violin teacher, I started my theory classes. I began studying piano and 
+                                        theory under Teacher Edwynya. However, I continue practising the violin 
+                                        now and then so that I do not end up forgetting how to play when deciding 
+                                        to join an examination again. This year, in August, I did my Grade 5 
+                                        examination and got a distinction, keeping my reputation in the family for 
+                                        always getting a distinction for music exams. 
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2021</p>
+                                    </div>
+                                    <p>
+                                        With the COVID-19 pandemic now worse than in 2020, all hopes of getting my 
+                                        violin examination for Grade 4 diminished. With the continued closure of 
+                                        borders, the Performance Exams continued, requiring four pieces instead of 
+                                        the usual three. However, this also called for no other components, like 
+                                        Aural. As Teacher Teresa recommended, I started preparations for my Grade 
+                                        5 theory exam to continue with the Grade 5 practical.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2020</p>
+                                    </div>
+                                    <p>
+                                        This year was supposed to be the year I got my Grade 3 Violin examination. 
+                                        However, with the shocking turn of events when COVID-19 came, I had no choice 
+                                        but to cancel my examinations.  Because of the pandemic, I switched from 
+                                        physical classes to online ones, even violin ones. This was extremely 
+                                        difficult and hindered my progress. I decided to start preparations for the 
+                                        Grade 4 exams.
+                                    </p>
+                                </div>
+                                </div>
+                                <footer class="footer" id="footer">
+                                    <ul class="link-list">
+                                        <li>
+                                            <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/jkys11257/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:kam.yaushing@gmail.com" rel="noopener noreferrer" target="_blank"> EMAIL </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/yaushing/schpw" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx;">DOCUMENTATION</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.buymeacoffee.com/kamyaushing" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx; color: grey; opacity: 0.4;">BUY ME A COFFEE</a>
+                                        </li>
+                                    </ul>
+                                    <div class="js-space-trigger"></div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="js-remote"></div>
+        <!-- Panelbear -->
+        <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+        <script>
+            window.panelbear = window.panelbear || function() {
+              (window.panelbear.q = window.panelbear.q || []).push(arguments);
+            };
+            panelbear('config', {
+              site: '4Tucg4KASiw'
+            });
+        </script>
+    </body>
+</html>

@@ -347,8 +347,75 @@
         font-size:clamp(16px,1.8vw,34px);
         font-size:var(--font-size-primary)
     }
+
+    .sch-list{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:3.4rem;
+        gap:3.4rem
+    }
+
+    .sch-list a{
+        font-size:1vh;
+        font-size:var(--font-size-secondary);
+        line-height:1;
+        text-transform:uppercase
+    }
+
+    .sch-list small{
+        display:block;
+        color:#a0a0a0;
+        color:var(--text-primary);
+        font-size:clamp(16px,1.8vw,34px);
+        font-size:var(--font-size-primary)
+    }
+
+    .ach-list{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:3.4rem;
+        gap:3.4rem;
+        justify-content:center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .ach-list li{
+        justify-content:center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .ach-list small{
+        display:block;
+        color:#a0a0a0;
+        text-align: center;
+        color:var(--text-primary);
+        font-size:clamp(16px,1.8vw,34px);
+        font-size:var(--font-size-primary)
+    }
+
+    .sto-list{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:3.4rem;
+        gap:3.4rem
+    }
+
+
+    .sto-list p{
+        display:block;
+        color:#a0a0a0;
+        color:var(--text-primary);
+        font-size:clamp(16px,1.8vw,34px);
+        font-size:var(--font-size-primary)
+    }
+
     @media (min-width:580px){
         .project-list{
+            grid-template-columns:1fr 1fr
+        }
+        .sch-list{
             grid-template-columns:1fr 1fr
         }
     }
@@ -912,3 +979,31 @@
     body.hide-content button.svelte-6brq6f{
         visibility:visible
     }
+
+.collapsible {
+    background-color: transparent;
+    cursor:url(../../assets/images/cursor-pointer.png) 14 8,auto;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  
+  .active, .collapsible:hover {
+    opacity: 0.9;
+    cursor:url(../../assets/images/cursor-pointer.png) 14 8,auto;
+  }
+  
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+
+.expand p{
+    font-family: inherit;
+    font-size: inherit;
+}
+  

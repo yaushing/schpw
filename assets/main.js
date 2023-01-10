@@ -17,8 +17,10 @@
 
 **REFER TO INDIVIDUAL SCRIPTS FOR PSEUDOCODE**
 */
-let showoef = true;
 
+
+let showoef = true;
+loadeff()
 function t() {}
 function e(t) {
   return t();
@@ -1866,3 +1868,4 @@ document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat(
     year: "numeric",
   }
 ).format(new Date());
+

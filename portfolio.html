@@ -5,7 +5,7 @@
     <meta name="description" content="Coding for humans. Come say hi 🌳" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <meta property="og:site_name" content="KYS | Home" />
+    <meta property="og:site_name" content="KYS | Portfolio" />
     <meta property="og:locale" content="en_US" />
     <meta property="article:author" content="https://yaushing.github.io/yaushing" />
     <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
@@ -34,9 +34,8 @@
     </script>
     <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css">
-    <script async src="assets/main.js"></script>
     <link rel="icon" href="assets/images/favicon.png" />
-    <title>KYS | Home</title>
+    <title>KYS | Portfolio</title>
   </head>
   <body class="cursor-default">
     <div class="space">
@@ -58,24 +57,21 @@
                   <div class="header__container">
                     <nav class="nav" js-slot="nav">
                       <ul class="nav__breadcrumb">
-                        <li>YSK</li>
+                        <li>
+                          <a href="index.html">YSK</a>
+                        </li>
+                        <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="Portfolio"> Portfolio </li>
                       </ul>
                       <ul class="nav__menu">
                         <li>
-                          <a href="projects.html">Past Projects</a>
+                          <a href="niche.html">Niche</a>
                         </li>
                         <li>
-                          <a href="games.html">Games</a>
+                          <a href="forte.html">Forte</a>
                         </li>
                         <li>
-                          <a href="rand-facts.html">13 Random Facts about me</a>
-                        <li>
-                          <a href="portfolio.html">Portfolio</a>
+                          <a href="ach.html">Acheivements</a>
                         </li>
-                        <li>
-                          <a>Version 1.0.000</a>
-                        </li>
-                      </ul>
                     </nav>
                     <div class="header__info">
                       <div class="js-header-date">NOV 14, 2022</div>
@@ -87,20 +83,27 @@
                   </div>
                 </header>
                 <div class="page-content" id="content" js-slot="content">
-                  <article class="bio">
-                    <p class="big-text" style="color:#a0a0a0"> 
-                      Hi! I'm <span class="bio__photo" tabindex="0">Kam Yau Shing</span>, a 
-                      <button class="button-text js-channel-trigger" data-channel="7">free runner</button>, 
-                      Python enthusiast, musician and game developer in my spare time.  <br/><br/>
-                      Currently, I'm focused on building a game in <a>unity</a> <br/><br/>
-                      I'm curious about the world and love exploring new things. 
-                      When it comes to 
-                      <a href="https://github.com/yaushing" target="_blank" rel="noopener noreferrer">coding</a>,  
-                      I love entering a 
-                      continuous state of <a href="https://en.wikipedia.org/wiki/Flow_(psychology)" target="_blank" rel="noopener noreferrer">flow</a> 
-                      while staring at a <a href="https://justgetflux.com/" target="_blank" rel="noopener noreferrer">not-so-bright</a> monitor! But 
-                      when I need breaks, my dogs, <a href="https://open.spotify.com/user/2t5nlqsld2wjnxzyc3ks54cle" target="_blank" rel="noopener noreferrer">music</a>, and <a href="javascript:window.open('photography.html', '_self')" rel="noopener noreferrer">photos</a> are always there for me! 
-                    </p>
+                  <a class="big-text" style="font-size:15vh;"> Education </a>
+                  <br>
+                  <article>
+                  <ul class="sch-list">
+                      <li>
+                        <a href="https://www.kcis.edu.hk/" target="_blank"> Kiangsu & Chekiang Kindergarten and Primary School (International Section) with Kindergarten Section (KCIS)</a>
+                        <small>2013 - 2014</small>
+                      </li>   
+                      <li>
+                        <a href="https://www.anglicanps.edu.sg/qgsk" target="_blank"> The Good Shepard Kindergarten (QGSK) </a>
+                        <small> 2014 - 2015 </small>
+                        </li>
+                        <li>
+                        <a href="https://queenstownpri.moe.edu.sg/" target="_blank"> Queenstown Primary School (QTPS) </a>
+                        <small> 2016 - 2021 </small>
+                        </li>
+                        <li>
+                                <a href="https://sst.edu.sg/" target="_blank"> School of Science and Technology, Singapore (SST) </a>
+                                <small> 2022 - present </small>
+                                </li>
+                  </ul>   
                   </article>
                 </div>
                 <footer class="footer" id="footer">
@@ -114,12 +117,6 @@
                     <li>
                       <a href="mailto:kam.yaushing@gmail.com" rel="noopener noreferrer" target="_blank"> EMAIL </a>
                     </li>
-                    <li>
-                      <a href="https://github.com/yaushing/schpw" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx;">DOCUMENTATION</a>
-                      </li>
-                    <li>
-                      <a href="https://www.buymeacoffee.com/kamyaushing" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx; color: grey; opacity: 0.4;">BUY ME A COFFEE</a>
-                      </li>
                   </ul>
                   <div class="js-space-trigger"></div>
                 </footer>
@@ -130,6 +127,7 @@
       </div>
     </div>
     <div class="js-remote"></div>
+    <script async src="assets/main.js"></script>
     <!-- Panelbear -->
     <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
     <script>

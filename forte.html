@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Coding for humans. Come say hi 🌳" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:site_name" content="KYS | Home" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="https://yaushing.github.io/yaushing" />
+        <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
+        <script>
+            ! function(A) {
+              "use strict";
+            
+              function e(A, e, n) {
+                const o = function(A) {
+                  return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+                }(A);
+                if (null === o) {
+                  const t = new Image;
+                  return t.onload = t.onerror = function() {
+                    n(A, 2 === t.height)
+                  }, void(t.src = e)
+                }
+                t(A, o)
+              }
+            
+              function t(e, t) {
+                t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+              }
+              e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+            }(document);
+        </script>
+        <link rel="preload" href="assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="icon" href="assets/images/favicon.png" />
+        
+        <script async src="assets/main.js"></script>
+        <title>KYS | Home</title>
+    </head>
+    <body class="cursor-default">
+        <div class="space">
+            <div class="stars"></div>
+            <div class="spaceship">
+                <div class="tv js-tv">
+                    <div class="tv-screen js-screen">
+                        <div class="tv-effects">
+                            <div class="tv-effect --decontrast"></div>
+                            <div class="tv-effect --static"></div>
+                            <div class="tv-effect --artifacts"></div>
+                            <div class="tv-effect --vignette"></div>
+                            <div class="tv-effect --crt"></div>
+                        </div>
+                        <div class="tv-content js-content">
+                            <a class="skip-link" href="#content">Skip to content</a>
+                            <div class="page-container glitchy-text">
+                                <header class="header">
+                                    <div class="header__container">
+                                        <nav class="nav" js-slot="nav">
+                                            <ul class="nav__breadcrumb">
+                                                <li><a href="index.html">YSK</a></li>
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="Forte"> Forte </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="header__info">
+                                            <div class="js-header-date">NOV 14, 2022</div>
+                                            <div class="js-header-controls"></div>
+                                            <noscript>
+                                                <div role="button">CHANNEL 00</div>
+                                            </noscript>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="page-content" id="content" js-slot="content">
+                                    <article class="bio">
+                                        <p class="big-text" style="color:white"> 
+                                            "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning"
+                                        </p>
+                                        <small>~Albert Einstein</small>
+                                    </article>
+                                </div>
+                                <br><br>
+                                <a type="button" class="collapsible" style="text-align:center; font-size:8vh;">Robotics and Coding +</a>
+                                <div class="content">
+                                    <div style="display:flex; justify-content:center;">
+                                        <p style="font-size:5vh">
+                                            I have loved <a>coding</a> and <a>mathematics</a> for as long as I can remember. Since starting coding in <a>python</a>, I began
+                                            learning more advanced coding languages such as <a>C++</a> and <a>C#</a>. <br><br>I learnt to use <a>HTML</a>,
+                                            <a>CSS</a> and <a>JS</a> to start creating websites. However, for this website, 
+                                            I also learnt how to code in <a>Svelte</a>.
+                                        </p>
+                                    </div>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2022</p>
+                                    </div>
+                                    <p>
+                                        This year was good for me in terms of my Robotics. I joined the Robotics@apex CCA and competed 
+                                        in IDE robotics, where I got 7th place. While it was relatively low (to me, at least), I enjoyed 
+                                        the stress and competition involved in the competition. In SSTInc, I completed an Intro to React 
+                                        course, which enhanced my familiarity with HTML, CSS and JavaScript while learning about ReactJS. 
+                                        Lastly, this year saw me start developing a shooter game using unity, which is currently under 
+                                        development.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2021</p>
+                                    </div>
+                                    <p>
+                                        This year I did not spend too much time actually coding or playing with my robots in 
+                                        preparation for PSLE, but I did re-think the names. Now the EV3 is Eve, the Mbot is 
+                                        The Enterprise, Cue is Dash, and my Sphero is Ball. I redesigned my website and created 
+                                        keyloggers and password-cracking software on python. 
+                                        I also learnt how to use Virtual Machines on VMware Fusion, and 
+                                        created a local windows machine for use at home.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2020</p>
+                                    </div>
+                                    <p>
+                                        This year, I started weekly classes for principles 4, and 5. I learnt 
+                                        Hypertext markup language, JavaScript and Cascading Style Sheets to build 
+                                        and design websites, like my first <a href="github.com/yaushing/dsa">personal website</a> 
+                                        hosted on my GitHub. I learnt to create visual games using python and started using 
+                                        Construct 3 to easily build visual games. In my CCA, we learnt to use drones and program them 
+                                        with swift.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2019</p>
+                                    </div>
+                                    <p>
+                                        This year is when I got even more robots: the Cue robot and the Sphero robot. 
+                                        I extremely enjoyed them as I developed my passion for more robotics and coding. 
+                                        In my CCA, I started Minecraft Education Edition in school and found a way to both 
+                                        play a game and code at the same time. I joined boot camps for Principles 1, 2, and 3 
+                                        in <a href="https://www.sgcodecampus.com/">SG code campus</a> and started giving my robots names. 
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2018</p>
+                                    </div>
+                                    <p>
+                                        In this year, I joined the Info-comm club in primary school and started coding 
+                                        as a full hobby. I learnt how to use the Makeblock's most simple robot, the Mbot, 
+                                        in school. I also got my second robot, the Makeblock Ultimate 2.0, and joined a 
+                                        course at First Code Academy to learn how to use more complex controls for the Mbot.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2017</p>
+                                    </div>
+                                    <p>
+                                        I believe this is when I started coding at Camp Asia as a holiday bootcamp, 
+                                        where I was first introduced to Scratch and the whole world of coding. This is 
+                                        also the year I went to First Code Academy at the end of the year to learn Minecraft 
+                                        Modding and 3D design. I got my first robot in this year, EV3.
+                                    </p>
+                                </div>
+                                <a type="button" class="collapsible" style="text-align:center; font-size:8vh;">Math Olympiad +</a>
+                                <div class="content">
+                                    <div style="display:flex; justify-content:center;">
+                                        <p style="font-size:5vh">
+                                          I have been fascinated by <a>numbers</a> and their rules and orders since young, 
+                                          yet it has never occurred to me that <a>Math Olympiad</a> is a path I would ever venture 
+                                          down. It was in 2019 that I tried it on a whim, and it was <a>thrilling</a>. The 
+                                          move for online competition in 2020 posed multiple challenges, such as having to do things online.
+                                          However, by far, 
+                                          <a>SIMOC</a> was my favourite 
+                                          as I met many like-minded kids worldwide.
+                                        </p>
+                                    </div>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2022</p>
+                                    </div>
+                                    <p>
+                                        I took a break from Math Olympiads this year to get used to my new schedule 
+                                        in school. I had to also stop Math Classroom as the class time coincided with 
+                                        my CCA. However, I decided that next year I would join Math Olympiads.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2021</p>
+                                    </div>
+                                    <p>
+                                        This year, I only participated in SASMO. However, I got Gold, 
+                                        which was my highest ever. I only participated in one as I had a lot of 
+                                        stress from PSLE. However, I continued in my weekly classes to improve my 
+                                        school grades and proudly managed to get high in my class.
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2020</p>
+                                    </div>
+                                    <p>
+                                        This year, I participated in SMKC, Mathlympics, SIMOC, SASMO and AMC. 
+                                        My scores actually improved, and I gladly continued my classes at The 
+                                        Math Classroom. My grades in school also increased, and my classes shifted 
+                                        from Monday to Wednesday 2:30. 
+                                    </p>
+                                    <div style="display:flex; justify-content:center;" class = "sto-list">
+                                        <p style = "color:white; font-size:10vh;">2019</p>
+                                    </div>
+                                    <p>
+                                        This year I started joining Math Olympaids. I joined 
+                                        Singapore Math Kangaroo Contest (SMKC), National Mathematical 
+                                        Olympiad of Singapore (NMOS), Mathlympics 2019, Singapore and 
+                                        Asian Schools Math Olympiad (SASMO), and Australian Math Competition (AMC). 
+                                        While my scores were not that rousing, I enjoyed the experience and dedicated 
+                                        myself to start doing better. I joined The Math Classroom under competition 
+                                        math under Ms Tou, and almost immediately my grades increased.
+                                    </p>
+                                </div>
+                                <footer class="footer" id="footer">
+                                    <ul class="link-list">
+                                        <li>
+                                            <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/jkys11257/" rel="noopener noreferrer" target="_blank">INSTAGRAM</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:kam.yaushing@gmail.com" rel="noopener noreferrer" target="_blank"> EMAIL </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/yaushing/schpw" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx;">DOCUMENTATION</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.buymeacoffee.com/kamyaushing" rel="noopener noreferrer" target="_blank" style="font-size: 10ppx; color: grey; opacity: 0.4;">BUY ME A COFFEE</a>
+                                        </li>
+                                    </ul>
+                                    <div class="js-space-trigger"></div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="js-remote"></div>
+        <!-- Panelbear -->
+        <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+        <script>
+            window.panelbear = window.panelbear || function() {
+              (window.panelbear.q = window.panelbear.q || []).push(arguments);
+            };
+            panelbear('config', {
+              site: '4Tucg4KASiw'
+            });
+        </script>
+    <script>
+          var coll = document.getElementsByClassName("collapsible");
+          console.log(coll)
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+    </body>
+</html>
