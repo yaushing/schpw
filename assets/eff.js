@@ -1,21 +1,7 @@
 let showoef = true;
 window.addEventListener("load", loadeff);
-window.addEventListener("load", alert("This website will be remove on 31/12/2025, 11:59pm"));
 window.addEventListener("keyup", ke);
 function ke(t) {
-    if (
-      !(function (t) {
-        const e = document.activeElement;
-        return (
-          e === Y ||
-          null == e ||
-          (("BUTTON" === e.tagName || "A" === e.tagName) &&
-            "Enter" !== t.key &&
-            " " !== t.key)
-        );
-      })(t)
-    )
-      return;
     if ("l" === t.key) {
       if (showoef == false) {
         showoef = true;
@@ -23,8 +9,9 @@ function ke(t) {
       } else {
         showoef = false;
         console.warn("Overlay effects: OFF");
-      }}}
+      } return loadeff()}}
 
+      
 function loadeff() {
     console.log("show overlay effects")
     let month = new Intl.DateTimeFormat("en-US", { month: "numeric" }).format(
