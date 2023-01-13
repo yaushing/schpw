@@ -1,19 +1,17 @@
-let showoef = true;
+let showoef = false;
 window.addEventListener("load", loadeff);
 window.addEventListener("keyup", ke);
 function ke(t) {
     if ("l" === t.key) {
-      if (showoef == false) {
-        showoef = true;
-        console.log("Overlay effects: ON");
-      } else {
-        showoef = false;
-        console.warn("Overlay effects: OFF");
-      } return loadeff()}}
+      return loadeff()}}
 
-      
 function loadeff() {
-    console.log("show overlay effects")
+    if (showoef == false) {
+      showoef = true;
+      console.log("Overlay effects: ON");
+    } else {
+      showoef = false;
+      console.warn("Overlay effects: OFF");}
     let month = new Intl.DateTimeFormat("en-US", { month: "numeric" }).format(
       new Date()
     );

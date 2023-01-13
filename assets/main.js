@@ -985,6 +985,7 @@ function Kt(e) {
     h,
     b,
     $,
+    t,
     w,
     x,
     E,
@@ -1017,6 +1018,8 @@ function Kt(e) {
     Q,
     X,
     Y,
+    she,
+    sheff,
     Z = { length: 9 },
     tt = [];
   for (let t = 0; t < Z.length; t += 1) tt[t] = Gt(Jt(e, Z, t));
@@ -1072,7 +1075,10 @@ function Kt(e) {
         (W = v()),
         (J = m("div")),
         (G = m("button")),
-        (G.textContent = "SHOW/HIDE"),
+        (G.textContent = "S/H"),
+        (she=m("div")),
+        (sheff = m("button")),
+        (sheff.textContent = "Eff"),
         (K = v()),
         (Q = m("div")),
         (Q.innerHTML =
@@ -1097,6 +1103,8 @@ function Kt(e) {
         y(I, "class", "control number svelte-1vrpccc"),
         y(G, "class", "showhide svelte-1vrpccc"),
         y(J, "class", "control showhide svelte-1vrpccc"),
+        y(sheff, "class", "showhideeff svelte-1vrpccc"),
+        y(she, "class", "control showhideeff svelte-1vrpccc"),
         y(U, "class", "numbers svelte-1vrpccc"),
         y(l, "class", "buttons svelte-1vrpccc"),
         y(Q, "class", "brand svelte-1vrpccc"),
@@ -1144,6 +1152,8 @@ function Kt(e) {
         u(I, V),
         u(U, W),
         u(U, J),
+        u(U, she)
+        u(she, sheff)
         u(J, G),
         u(s, K),
         u(s, Q),
@@ -1157,6 +1167,7 @@ function Kt(e) {
             g(P, "click", $t),
             g(V, "click", e[2]),
             g(G, "click", Ct),
+            g(sheff, "click", loadeff),
           ]),
           (X = !0));
     },
