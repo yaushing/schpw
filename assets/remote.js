@@ -1493,56 +1493,13 @@ function ke(t) {
     })(t)
   )
     return;
-    if ("k" === t.key) {
-      console.log("SpaceShortCut");
-      return At();}
-  if ("+" === t.key || "=" === t.key) {
-    console.log("IncChShortCut");
-    return yt();
-  }
-  if ("-" === t.key) {
-    console.log("DecChShortCut");
-    return $t();
-  }
-  if ("h" === t.key) {
-    console.log("ShHidShortCut");
-    return Ct();
-  }
-  if ("f" === t.key) {
-    console.log("FuScrShortCut");
-    return void (document.fullscreenElement
-      ? document.exitFullscreen && document.exitFullscreen()
-      : document.documentElement.requestFullscreen());
-  }
-  const e = Number(t.key);
-  Number.isNaN(e) || (e === l(dt) ? bt(0) : bt(e));
-  if (e < 3 && e > 0) {
-    console.warn("Channel low: " + e);
-  } else if (e > 7) {
-    console.warn("Channel high: " + e);
-  } else if (e == 0) {
-    console.error("Channel NULL");
-  } else {
-    console.log("Channel" + e);
-  }
+  if ("k" === t.key) {
+    console.log("SpaceShortCut");
+    return At();}
 }
-const Ne = () => {
-  Q(() => {
-    Ae(),
-      window.addEventListener("contentChange", Ae),
+
+    Ae()
       window.addEventListener("keyup", ke),
-      window.addEventListener("popstate", async (t) => {
-        let { state: e } = t;
-        if (Z.pathname === ue) return t.preventDefault(), void ge();
-        (ue = Z.pathname),
-          null == e && (e = se),
-          pt.set(ct),
-          await et(300),
-          pt.set(rt),
-          Q(() => {
-            me(e), (document.title = e.title), ge();
-          });
-      }),
       Y.addEventListener("mousemove", (t) => {
         fe(t.target) &&
           (oe.has(t.target.href) || he(t.target.href, { importante: "low" }));
@@ -1558,18 +1515,8 @@ const Ne = () => {
       new Xt({ target: document.querySelector(".js-remote") }),
       new te({ target: document.querySelector(".js-header-controls") }),
       new ne({ target: document.querySelector(".js-space-trigger") });
-  });
-};
+
 "interactive" !== document.readyState
   ? window.addEventListener("DOMContentLoaded", Ne)
   : Ne();
-
-document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat(
-  "en-US",
-  {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }
-).format(new Date());
 
