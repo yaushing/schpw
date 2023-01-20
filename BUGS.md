@@ -1,3 +1,3 @@
 **BUGS**
 *1. LOST SPACESHOOTER APK. BAD COS UNITY WON'T LET ME BUILD APK*
-*2. Look space just doesn't work*
+*2. Look REMOTE just doesn't work*
