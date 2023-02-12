@@ -147,7 +147,8 @@
     .nav__breadcrumb{
         display:flex;
         align-items:center;
-        min-height:28px
+        min-height:28px;
+        font-size: 2vw;
     }
     .nav__breadcrumb li:not(:last-child):after{
         content:" /";
@@ -1017,5 +1018,9 @@
 .expand p{
     font-family: inherit;
     font-size: inherit;
+}
+
+.copyrightdiv{
+    font-size: 1vw;
 }
   
